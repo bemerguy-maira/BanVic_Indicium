@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: dim_datas
+    description: This table contains clickstream events from the marketing website
+
+    columns:
+      - name: data_dia
+        description: "Esta é a coluna"
+        tests:
+          - unique
+          - not_null
