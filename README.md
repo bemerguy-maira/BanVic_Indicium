@@ -1,4 +1,4 @@
-Welcome to your new dbt project!
+Aqui segue o passo a passo do que foi realizado no projeto:
 
 ### Using the starter project
 
