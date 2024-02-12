@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: fct_transacoes
+    description: "É a tabelas fatos transações da instituição financeira BanVic"
+
+    columns:
+      - name: cod_transacao
+        description: "Esta é a coluna que indica o código de cada transação financeira"
+        tests:
+          - not_null
+
+      - name: cod_conta
+        description: "Esta é a coluna que indica o código de cada conta associada a transação financeira"
+        tests:
+          - not_null
+
+      - name: data_transacao
+        description: "Esta é a coluna que indica a data de ocorrência de cada transação financeira"
+
+      - name: nome_transacao
+        description: "Esta é a coluna que indica o nome de cada transação financeira"
+        
+      - name: valor_transacao
+        description: "Esta é a coluna que indica o valor de cada transação financeira"
+
+      - name: sk_transacao_conta
+        description: "Esta é a coluna que indica a chave surrogate criada de vinculação de transação por conta"

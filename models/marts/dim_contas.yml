@@ -25,14 +25,14 @@ models:
       - name: tipo_conta
         description: "Esta é a coluna que indica o tipo de cliente (Pessoa Física ou Jurídica) associado a cada conta"
 
-      - name: data_abertura
+      - name: data_abertura_conta
         description: "Esta é a coluna que indica a data de abertura associada a cada conta"
 
-      - name: saldo_total
+      - name: saldo_total_conta
         description: "Esta é a coluna que indica o valor de saldo total assoiado a cada conta"
           
-      - name: saldo_disponivel
+      - name: saldo_disponivel_conta
         description: "Esta é a coluna que indica o valor de saldo disponível assoiado a cada conta"
 
-      - name: data_ultimo_lancamento
+      - name: data_ultimo_lancamento_conta
         description: "Esta é a coluna que indica a data de ocorrencia do último lançamento registrado aquela conta"
