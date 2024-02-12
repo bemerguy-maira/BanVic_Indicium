@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_clientes
+    description: "É a dimensão de clientes vinculadas à instituição financeira BanVic"
+
+    columns:
+      - name: cod_cliente
+        description: "Esta é a coluna que indica o código de cada cliente da instituição financeira BanVic"
+        tests:
+          - unique
+          - not_null
+
+      - name: primeiro_nome
+        description: "Esta é a coluna que indica o primeiro nome de cada cliente"
+        
+      - name: sobrenome
+        description: "Esta é a coluna que indica o sobrenome associado ao primeiro nome de cada cliente"
+
+      - name: tipo_cliente
+        description: "Esta é a coluna que indica o tipo de cliente (Pessoa Física ou Jurídica) de cada cliente"
+
+      - name: data_inclusao
+        description: "Esta é a coluna que indica a data de inclusão de cada cliente no sistema do BanVic"
+
+      - name: data_nascimento
+        description: "Esta é a coluna que indica a data de nascimento de cada cliente"
+          
+      - name: endereco
+        description: "Esta é a coluna que indica o endereço completo de cada cliente"
