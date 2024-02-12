@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: dim_propostas
+    description: "É a dimensão de propostas de crédito vinculadas por cliente e colaborador da instituição financeira BanVic"
+
+    columns:
+      - name: cod_proposta
+        description: "Esta é a coluna que indica o código de cada proposta de crédito"
+        tests:
+          - unique
+          - not_null
+
+      - name: cod_cliente
+        description: "Esta é a coluna que indica o código de cada cliente associado a proposta de crédito"
+        tests:
+          - not_null
+
+      - name: cod_colaborador
+        description: "Esta é a coluna que indica o código de cada colaborador associado a proposta de crédito"
+        tests:
+          - not_null
+
+      - name: data_entrada_proposta
+        description: "Esta é a coluna que indica a data de entrada no sistema do BanVic de cada proposta de crédito"
+        
+      - name: taxa_juros_mensal
+        description: "Esta é a coluna que indica a taxa de juros mensal associada a cada proposta de crédito"
+
+      - name: valor_proposta
+        description: "Esta é a coluna que indica o valor de cada proposta de crédito"
+
+      - name: valor_financiamento
+        description: "Esta é a coluna que indica o valor do financiamento de cada proposta de crédito"
+
+      - name: valor_entrada
+        description: "Esta é a coluna que indica o valor de entrada para cada proposta de crédito"
+          
+      - name: valor_prestacao
+        description: "Esta é a coluna que indica o valor por prestação de cada proposta de crédito"
+
+      - name: quantidade_parcelas
+        description: "Esta é a coluna que indica a quantidade de parcelas/prestações de cada proposta de crédito"
+
+      - name: carencia
+        description: "Esta é a coluna que indica a carência associada a cada proposta de crédito"
+
+      - name: status_proposta
+        description: "Esta é a coluna que indica o status de andamento de cada proposta de crédito"
