@@ -100,5 +100,5 @@ with
         from days_named
     )
 
-select * 
+select *
 from final_cte

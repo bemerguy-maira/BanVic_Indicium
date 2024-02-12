@@ -2,11 +2,74 @@ version: 2
 
 models:
   - name: dim_datas
-    description: This table contains clickstream events from the marketing website
+    description: "Essa dimensão de datas foi criada pois durante o curso de Formação em Engenharia de Analytics foi mencionado a importância da sua existência na modelagem de dados, 
+    uma vez que ela auxilia em diversas análises de regras de negócio. No entanto, como não chegamos a fazer no curso essa dimensão, para cria-la eu pesquisei um pouco e achei um
+    artigo no site medium (https://medium.com/indiciumtech/date-dimension-how-to-create-a-practical-and-useful-date-dimension-in-dbt-5ee70a18f3bb) com o passo-a-passo da criação 
+    dessa dimensão"
 
     columns:
       - name: data_dia
-        description: "Esta é a coluna"
+        description: "Esta é a coluna que indica o ano-mês-dia"
         tests:
           - unique
+          - not_null
+
+      - name: dia_da_semana
+        description: "Esta é a coluna que indica o dia da semana de maneira numérica para linkar com dia por escrito iniciando por 1 = Domingo e assim sucessivamente"
+        tests:
+          - not_null
+      
+      - name: nome_do_dia
+        description: "Esta é a coluna que indica o dia da semana de maneira escrita para linkar com dia numérico iniciando por 1 = Domingo e assim sucessivamente"
+        tests:
+          - not_null
+      
+      - name: mes
+        description: "Esta é a coluna que indica o mês de maneira numérica para linkar com o mês por escrito iniciando por 1 = January/Janeiro e assim sucessivamente"
+        tests:
+          - not_null
+
+      - name: mes_ingles
+        description: "Esta é a coluna que indica o mês em inglês de maneira escrita para linkar com o mês numérico iniciando por 1 = January e assim sucessivamente"
+        tests:
+          - not_null 
+
+      - name: nome_do_mes
+        description: "Esta é a coluna que indica o mês em português de maneira escrita para linkar com o mês numérico iniciando por 1 = Janeiro e assim sucessivamente"
+        tests:
+          - not_null
+
+      - name: abrev_do_mes
+        description: "Esta é a coluna que indica o nome do mês em português de maneira abreviada iniciando por Janeiro = Jan e assim sucessivamente"
+        tests:
+          - not_null
+
+      - name: trimestre
+        description: "Esta é a coluna que indica o trimestre numericamente iniciando pelos três primeiros meses do ano = 1 e assim sucessivamente"
+        tests:
+          - not_null
+
+      - name: nome_trimestre
+        description: "Esta é a coluna que indica o nome do trimestre de maneira escrita para linkar com o trimestre numérico iniciando por 1 = 1° trimestre e assim sucessivamente"
+        tests:
+          - not_null
+
+      - name: semestre
+        description: "Esta é a coluna que indica o semestre numericamente iniciando pelos seis primeiros meses do ano = 1 e assim sucessivamente"
+        tests:
+          - not_null
+
+      - name: nome_semestre
+        description: "Esta é a coluna que indica o nome do semestre de maneira escrita para linkar com o semestre numérico iniciando por 1 = 1° e 2° trimestres e 2 = 3° e 4° trimestres"
+        tests:
+          - not_null
+
+      - name: dia_do_ano
+        description: "Esta é a coluna que indica o dia do ano numericamente iniciando por 1 = 1° de janeiro e assim sucessivamente"
+        tests:
+          - not_null
+
+      - name: ano
+        description: "Esta é a coluna que indica o ano numericamente iniciando por 1970"
+        tests:
           - not_null

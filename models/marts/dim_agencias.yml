@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_agencias
+    description: "É a dimensão de agências vinculadas à instituição financeira BanVic"
+
+    columns:
+      - name: cod_agencia
+        description: "Esta é a coluna que indica o código de cada agência"
+        tests:
+          - unique
+          - not_null
+
+      - name: nome
+        description: "Esta é a coluna que indica o nome de cada agência"
+        
+      - name: endereco
+        description: "Esta é a coluna que indica o endereço de cada agência"
+
+      - name: cidade
+        description: "Esta é a coluna que indica a cidade de cada agência"
+
+      - name: uf
+        description: "Esta é a coluna que indica o estado de cada agência"
+
+      - name: data_abertura
+        description: "Esta é a coluna que indica a data de abertura de cada agência"
+          
+      - name: tipo_agencia
+        description: "Esta é a coluna que indica a tipologia de cada agência"

@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: erp_ban_vic
+    description: Fonte ERP (Sistema integrado de gestão empresarial) da instituição financeira BanVic
+    schema: Dados_Brutos
+    tables:
+      - name: agencia
+      - name: clientes
+      - name: colaborador_agencia
+      - name: colaboradores
+      - name: contas
+      - name: propostas_credito
+      - name: transacoes
