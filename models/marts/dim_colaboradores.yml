@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: dim_colaboradores
+    description: "É a dimensão de colaboradores vinculadas as agências da instituição financeira BanVic"
+
+    columns:
+      - name: cod_colaborador
+        description: "Esta é a coluna que indica o código de cada colaborador"
+        tests:
+          - unique
+          - not_null
+
+      - name: primeiro_nome_colaborador
+        description: "Esta é a coluna que indica o primeiro nome de cada colaborador"
+        
+      - name: sobrenome_colaborador
+        description: "Esta é a coluna que indica o sobrenome associado ao primeiro nome de cada colaborador"
+
+      - name: data_nascimento_colaborador
+        description: "Esta é a coluna que indica a data de nascimento de cada colaborador"
+
+      - name: endereco_colaborador
+        description: "Esta é a coluna que indica o endereço completo de cada colaborador"
+
+      - name: cod_agencia
+        description: "Esta é a coluna que indica o código de agência associado a cada colaborador"

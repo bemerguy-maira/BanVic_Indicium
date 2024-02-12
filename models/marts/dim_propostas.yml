@@ -24,25 +24,25 @@ models:
       - name: data_entrada_proposta
         description: "Esta é a coluna que indica a data de entrada no sistema do BanVic de cada proposta de crédito"
         
-      - name: taxa_juros_mensal
+      - name: taxa_juros_mensal_proposta
         description: "Esta é a coluna que indica a taxa de juros mensal associada a cada proposta de crédito"
 
       - name: valor_proposta
         description: "Esta é a coluna que indica o valor de cada proposta de crédito"
 
-      - name: valor_financiamento
+      - name: valor_financiamento_proposta
         description: "Esta é a coluna que indica o valor do financiamento de cada proposta de crédito"
 
-      - name: valor_entrada
+      - name: valor_entrada_proposta
         description: "Esta é a coluna que indica o valor de entrada para cada proposta de crédito"
           
-      - name: valor_prestacao
+      - name: valor_prestacao_proposta
         description: "Esta é a coluna que indica o valor por prestação de cada proposta de crédito"
 
-      - name: quantidade_parcelas
+      - name: quantidade_parcelas_proposta
         description: "Esta é a coluna que indica a quantidade de parcelas/prestações de cada proposta de crédito"
 
-      - name: carencia
+      - name: carencia_proposta
         description: "Esta é a coluna que indica a carência associada a cada proposta de crédito"
 
       - name: status_proposta

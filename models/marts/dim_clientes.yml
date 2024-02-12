@@ -11,20 +11,20 @@ models:
           - unique
           - not_null
 
-      - name: primeiro_nome
+      - name: primeiro_nome_cliente
         description: "Esta é a coluna que indica o primeiro nome de cada cliente"
         
-      - name: sobrenome
+      - name: sobrenome_cliente
         description: "Esta é a coluna que indica o sobrenome associado ao primeiro nome de cada cliente"
 
       - name: tipo_cliente
         description: "Esta é a coluna que indica o tipo de cliente (Pessoa Física ou Jurídica) de cada cliente"
 
-      - name: data_inclusao
+      - name: data_inclusao_cliente
         description: "Esta é a coluna que indica a data de inclusão de cada cliente no sistema do BanVic"
 
-      - name: data_nascimento
+      - name: data_nascimento_cliente
         description: "Esta é a coluna que indica a data de nascimento de cada cliente"
           
-      - name: endereco
+      - name: endereco_cliente
         description: "Esta é a coluna que indica o endereço completo de cada cliente"
