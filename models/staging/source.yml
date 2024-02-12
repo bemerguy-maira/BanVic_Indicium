@@ -1,7 +1,0 @@
-version: 2
-
-sources:
-  - name: erp_ban_vic
-    schema: Dados_Brutos
-    tables:
-      - name: agencia
