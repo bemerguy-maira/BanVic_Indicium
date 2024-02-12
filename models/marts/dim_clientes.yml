@@ -11,11 +11,8 @@ models:
           - unique
           - not_null
 
-      - name: primeiro_nome_cliente
-        description: "Esta é a coluna que indica o primeiro nome de cada cliente"
-        
-      - name: sobrenome_cliente
-        description: "Esta é a coluna que indica o sobrenome associado ao primeiro nome de cada cliente"
+      - name: nome_cliente
+        description: "Esta é a coluna que indica o nome e sobrenome de cada cliente"
 
       - name: tipo_cliente
         description: "Esta é a coluna que indica o tipo de cliente (Pessoa Física ou Jurídica) de cada cliente"
