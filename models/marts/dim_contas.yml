@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: cod_conta
+    description: "É a dimensão de contas vinculadas à instituição financeira BanVic"
+
+    columns:
+      - name: cod_conta
+        description: "Esta é a coluna que indica o código de cada conta da instituição financeira BanVic"
+        tests:
+          - unique
+          - not_null
+
+      - name: cod_agencia
+        description: "Esta é a coluna que indica o código de cada agência associada a cada conta"
+        tests:
+          - unique
+          - not_null
+        
+      - name: cod_colaborador
+        description: "Esta é a coluna que indica o código de cada colaborador associado a cada conta"
+        tests:
+          - not_null
+
+      - name: tipo_conta
+        description: "Esta é a coluna que indica o tipo de cliente (Pessoa Física ou Jurídica) associado a cada conta"
+
+      - name: data_abertura
+        description: "Esta é a coluna que indica a data de abertura associada a cada conta"
+
+      - name: saldo_total
+        description: "Esta é a coluna que indica o valor de saldo total assoiado a cada conta"
+          
+      - name: saldo_disponivel
+        description: "Esta é a coluna que indica o valor de saldo disponível assoiado a cada conta"
+
+      - name: data_ultimo_lancamento
+        description: "Esta é a coluna que indica a data de ocorrencia do último lançamento registrado aquela conta"
