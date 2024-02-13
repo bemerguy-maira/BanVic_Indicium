@@ -24,6 +24,9 @@ existentes, foram corrigidos e o somente validados após todos os testes serem b
 7. No tratamento de dados da stg_erp_transacoes foi criada uma Surrogate Key para validar se cada linha dessa tabela é única unindo o código 
 da transação com o código da conta vínculada a essa transação;
 
+8. Foram criadas regras em algumas dimensõespara facilitar a compreensão e análise dos dados;
+
+
 #### Análise do perfil da equipe de liderança do BanVic:
 
  - Diretor de Tecnologia: Andre Tech busca gerar análises automatizadas dos dados, será um grande aliado na apresentação e aprovação das implementações propostas;
