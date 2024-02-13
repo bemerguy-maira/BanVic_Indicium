@@ -17,4 +17,3 @@ with
 
 select *
 from fonte_contas
-order by data_abertura_conta
